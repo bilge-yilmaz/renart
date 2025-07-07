@@ -1,0 +1,128 @@
+.product-list {
+  width: 100%;
+  position: relative;
+}
+
+.product-carousel-container {
+  position: relative;
+  padding: 0 45px;
+}
+
+.product-swiper {
+  padding: 0.5rem 0 3rem 0;
+}
+
+/* Custom navigation buttons */
+.carousel-nav-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border: 1px solid #ddd;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  color: #888;
+}
+
+.carousel-nav-btn:hover {
+  background: #fafafa;
+  color: #555;
+  transform: translateY(-50%);
+  border-color: #aaa;
+}
+
+.carousel-nav-btn:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.carousel-nav-prev {
+  left: 5px;
+}
+
+.carousel-nav-next {
+  right: 5px;
+}
+
+/* Custom pagination bullets */
+.swiper-pagination {
+  bottom: 0 !important;
+  position: relative !important;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  background: #d0d0d0 !important;
+  border-radius: 50% !important;
+  margin: 0 2px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  opacity: 1 !important;
+}
+
+.custom-bullet-active {
+  background: #888 !important;
+  transform: scale(1.4) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-carousel-container {
+    padding: 0 40px;
+  }
+  
+  .carousel-nav-btn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .carousel-nav-prev {
+    left: 3px;
+  }
+  
+  .carousel-nav-next {
+    right: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-carousel-container {
+    padding: 0 35px;
+  }
+  
+  .carousel-nav-btn {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .carousel-nav-prev {
+    left: 2px;
+  }
+  
+  .carousel-nav-next {
+    right: 2px;
+  }
+}
+
+/* Hide navigation buttons on very small screens */
+@media (max-width: 360px) {
+  .carousel-nav-btn {
+    display: none;
+  }
+  
+  .product-carousel-container {
+    padding: 0 8px;
+  }
+} 

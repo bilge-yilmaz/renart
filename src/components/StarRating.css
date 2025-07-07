@@ -1,0 +1,35 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+}
+
+.star-filled {
+  fill: #FFA500;
+}
+
+.star-half {
+  fill: url(#half-star);
+}
+
+.star-empty {
+  fill: #D3D3D3;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .star {
+    width: 14px;
+    height: 14px;
+  }
+} 
